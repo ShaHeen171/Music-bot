@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} You are not in the same voice channel!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} No music currently playing !`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} No music currently playing!`);
 
         if (args.join(" ").toLowerCase() === 'queue') {
             if (client.player.getQueue(message).loopMode) {
