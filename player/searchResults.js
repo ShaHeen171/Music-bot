@@ -1,7 +1,7 @@
 module.exports = (client, message, query, tracks) => {
     message.channel.send({
         embed: {
-            color: 'BLUE',
+            color: 'RANDOM',
             author: { name: `Here are your search results for ${query}` },
             footer: { text: 'This bot uses a Github project made by Zerio (ZerioDev/Music-bot)' },
             timestamp: new Date(),

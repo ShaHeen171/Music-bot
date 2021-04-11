@@ -11,8 +11,8 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
-                    author: { name: 'Help pannel' },
+                    color: 'RANDOM',
+                    author: { name: 'Help panel' },
                     footer: { text: 'This bot uses a Github project made by Zerio (ZerioDev/Music-bot)' },
                     fields: [
                         { name: 'Bot', value: infos },
@@ -26,12 +26,12 @@ module.exports = {
         } else {
             const command = message.client.commands.get(args.join(" ").toLowerCase()) || message.client.commands.find(x => x.aliases && x.aliases.includes(args.join(" ").toLowerCase()));
 
-            if (!command) return message.channel.send(`${client.emotes.error} - I did not find this command !`);
+            if (!command) return message.channel.send(`${client.emotes.error} Could not find that command!!`);
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
-                    author: { name: 'Help pannel' },
+                    color: 'RANDOM',
+                    author: { name: 'Help panel' },
                     footer: { text: 'This bot uses a Github project made by Zerio (ZerioDev/Music-bot)' },
                     fields: [
                         { name: 'Name', value: command.name, inline: true },
